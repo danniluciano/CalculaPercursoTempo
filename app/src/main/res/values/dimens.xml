@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_padrao">10dp</dimen>
+    <dimen name="largura_buttons">163dp</dimen>
+    <dimen name="altura_buttons">62dp</dimen>
+    <dimen name="tam_text_size">15sp</dimen>
+</resources>

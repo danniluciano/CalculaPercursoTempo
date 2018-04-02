@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="10dp"
+    android:columnCount="2"
+    android:useDefaultMargins="true"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/permissaoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/altura_buttons"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal|center"
+        android:onClick="onClick"
+        android:padding="@dimen/padding_padrao"
+        android:text="@string/pedir_permissao_string" />
+
+    <Button
+        android:id="@+id/ativarGPSButton"
+        android:layout_width="@dimen/largura_buttons"
+        android:layout_height="@dimen/altura_buttons"
+        android:layout_gravity="fill_horizontal|center"
+        android:padding="@dimen/padding_padrao"
+        android:onClick="onClick"
+        android:text="@string/ativar_gps_string" />
+
+    <Button
+        android:id="@+id/desativarGPSButton"
+        android:layout_width="@dimen/largura_buttons"
+        android:layout_height="@dimen/altura_buttons"
+        android:layout_gravity="fill_horizontal|center"
+        android:padding="@dimen/padding_padrao"
+        android:onClick="onClick"
+        android:text="@string/desativar_gps_string" />
+
+    <Button
+        android:id="@+id/iniciarPercursoButton"
+        android:layout_width="@dimen/largura_buttons"
+        android:layout_height="@dimen/altura_buttons"
+        android:layout_gravity="fill_horizontal|center"
+        android:onClick="onClick"
+        android:padding="@dimen/padding_padrao"
+        android:text="@string/iniciar_percurso_string" />
+
+    <Button
+        android:id="@+id/terminarPercusoButton"
+        android:layout_width="@dimen/largura_buttons"
+        android:layout_height="@dimen/altura_buttons"
+        android:layout_gravity="fill_horizontal|center"
+        android:padding="@dimen/padding_padrao"
+        android:onClick="onClick"
+        android:text="@string/terminar_percurso_string" />
+
+    <TextView
+        android:id="@+id/distanciaPercorridaTextView"
+        android:layout_width="@dimen/largura_buttons"
+        android:layout_height="@dimen/altura_buttons"
+        android:layout_gravity="fill_horizontal|center"
+        android:gravity="center"
+        android:padding="@dimen/padding_padrao"
+        android:text="@string/distancia_percorrida_string"
+        android:textSize="@dimen/tam_text_size" />
+
+    <TextView
+        android:id="@+id/valorDistanciaTextView"
+        android:layout_width="@dimen/largura_buttons"
+        android:layout_height="@dimen/altura_buttons"
+        android:layout_gravity="fill_horizontal|center"
+        android:gravity="center"
+        android:padding="@dimen/padding_padrao" />
+
+    <TextView
+        android:id="@+id/tempoPassadoTextView"
+        android:layout_width="@dimen/largura_buttons"
+        android:layout_height="@dimen/altura_buttons"
+        android:layout_gravity="fill_horizontal|center"
+        android:gravity="center"
+        android:padding="@dimen/padding_padrao"
+        android:text="@string/tempo_passado_string"
+        android:textSize="@dimen/tam_text_size" />
+
+    <Chronometer
+        android:id="@+id/cronometro"
+        android:layout_width="@dimen/largura_buttons"
+        android:layout_height="@dimen/altura_buttons"
+        android:layout_gravity="fill_horizontal|center"
+        android:gravity="center"
+        android:padding="@dimen/padding_padrao" />
+
+</GridLayout>
